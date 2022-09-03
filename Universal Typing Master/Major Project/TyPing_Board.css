@@ -1,0 +1,180 @@
+#Typing_Board {
+    text-align: center;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: black;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.timer,
+.errors,
+.neterrors,
+.accuracy,
+.cpm,
+.wpm {
+    /* background-color: goldenrod; */
+    background-color: #F4ABC4;
+    height: 100px;
+    width: 110px;
+    margin: 8px;
+    border-radius: 15%;
+    border-style: solid;
+    border-color: #150E56;
+    overflow: hidden;
+    box-shadow: #685ae6 px 6px 3px;
+}
+
+
+
+.header_text{
+    color: white;
+  height: 35%;
+  width: 100%;
+  text-align: center;
+  background-color: #150E56;
+  box-sizing: border-box;
+}
+
+
+:root{
+    --main-colorCursor : black;
+    --main-colorCorrectChars : #009900;
+    --main-colorIncorrectChars : #DA0037;
+}
+
+.nextChar{
+    background-color: var(--main-colorCursor);
+    color: white;
+}
+
+.cpm,
+.wpm {
+    display: block;
+}
+
+
+.curr_time,
+.curr_errors,
+.curr_accuracy,
+.curr_cpm,
+.curr_wpm {
+    font-size: 15px;
+}
+
+.quote {
+    display: inline-block;
+    overflow: auto;
+    max-width: 60ch;
+    word-wrap: break-word;
+    max-height: 6.6em;
+    text-overflow: ellipsis;
+    line-height: 1.8em;
+    overflow-y: scroll;
+    background-color: white;
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 25px;
+    box-shadow: #150E56 5px 8px 5px 5px;
+    border-radius: 30px;
+    color: grey;
+    font-weight: 500;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+.input_area {
+    background-color: white;
+    height: 0%;
+    width: 0%;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+}
+
+.incorrect_char {
+    color: var(--main-colorIncorrectChars);
+    text-decoration: underline;
+}
+
+.correct_char {
+    color: var(--main-colorCorrectChars);
+}
+
+.restart_btn {
+    display: block;
+    background-color: #326765;
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 0px;
+    box-shadow: black 5px 8px 5px;
+    margin-top: 15px;
+}
+
+
+
+.card-body{
+    /* background-color: blue; */
+    display: inline-block;
+    /* font-size: 2vh; */
+    font-weight: bold;
+
+}
+
+#cursorColorPickerBox{
+    margin-left: 10px;
+}
+
+#inCorrectCharColor{
+    margin-left: 20px;
+    text-align: center;
+}
+
+
+
+table{
+    display: none;
+}
+
+
+th {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  th, td {
+    border-bottom: 1px solid #ddd;
+  }
+
+  th, td {
+    padding: 15px;
+    text-align: left;
+  }
+
+#divErrorTable{
+        width: 50%;
+        margin: 0 auto;
+  }
+  
